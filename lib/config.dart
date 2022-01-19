@@ -1,6 +1,4 @@
-final String instagram = "instagram";
-final String whatup = "whats up";
-final String linked = "linked in";
+final String bio = "this is a bio";
 
 final String name = "muhamad";
 final String title = "the title";

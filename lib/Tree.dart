@@ -1,6 +1,3 @@
-import 'dart:io';
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -39,47 +36,12 @@ class _TreeState extends State<Tree> {
             child: Text(
                 'name:$name      title:$title          location:$location'),
           ),
-        //   SizedBox(
-        //     height: 25,
-        //   ),
-        //    Row( mainAxisAlignment: MainAxisAlignment.center, children: [
-        //         Container(child: TextButton(onPressed:_launchURL ,child: Text(instagram)),
-        //     width: 300,
-        //     height: 50,
-        //     color: Colors.grey,
-        //   )
-        //    ],)
-        //   ,
-        //   SizedBox(height: 25),
-        //    Row( mainAxisAlignment: MainAxisAlignment.center, children: [
-        //         Container(child: TextButton(onPressed:_launchURL ,child: Text(whatup)),
-        //     width: 300,
-        //     height: 50,
-        //     color: Colors.grey,
-        //   )
-        //    ],),
-        //   SizedBox(height: 25),
-        //   Row( mainAxisAlignment: MainAxisAlignment.center, children: [
-        //      Container(child: TextButton(onPressed:_launchURL ,child: Text(linked)),
-        //     width: 300,
-        //     height: 50,
-        //     color: Colors.grey,
-        //   )  
-        //       ],),
-        //   SizedBox(height: 25),
-        
-        //   SizedBox(height: 25),
-        //   Row(
-        //     mainAxisAlignment: MainAxisAlignment.center,
-        //     children: [
-        //       IconButton(
-        //           onPressed:  _launchURLwhatsup, icon: Icon(Icons.access_time_rounded)),
-             
-        //       IconButton(onPressed: _launchURLinsta, icon: Icon(Icons.ac_unit)),
-        //       IconButton(onPressed: () {}, icon: Icon(Icons.wysiwyg_rounded)),
-        //     ],
-        //   ),  
-          
+          Container(
+            child: Divider(color: Colors.black,),height: 10,
+        ),
+        Container(
+          child: Text(bio), margin: EdgeInsets.only(top: 5),)
+          ,
          Container(
           child: ListView.builder(
           scrollDirection: Axis.vertical,
