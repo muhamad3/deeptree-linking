@@ -1,9 +1,22 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 final String bio = "this is a bio";
 
 final String name = "muhamad";
 final String title = "the title";
 final String location = "halabja";
 final String looking = "looking for a job";
+
+
+
+set() async {
+  DocumentSnapshot variable = await FirebaseFirestore.instance
+      .collection('links')
+      .doc('xPsgCpGNiPV4g84k6c4A')
+      .get();
+
+  
+}
 
 class links {
   String image;
